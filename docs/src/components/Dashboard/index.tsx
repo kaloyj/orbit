@@ -3,15 +3,15 @@ import { Grid } from "@kiwicom/orbit-components";
 import { WindowLocation } from "@reach/router";
 import { Pet as PetIcon } from "@kiwicom/orbit-components/icons";
 
-import Tile from "./Tile";
-import DocLayout from "./DocLayout";
+import Tile from "../Tile";
+import DocLayout from "../DocLayout";
 
 interface Props {
   path: string;
   location: WindowLocation;
 }
 
-const Tracking = ({ path = "/dashboard/", location }: Props) => {
+const Dashboard = ({ path = "/dashboard/", location }: Props) => {
   return (
     <DocLayout location={location} title="Tracking" path={path} noElevation>
       <Grid columns="1fr" tablet={{ columns: "1fr 1fr" }}>
@@ -24,4 +24,4 @@ const Tracking = ({ path = "/dashboard/", location }: Props) => {
   );
 };
 
-export default Tracking;
+export default Dashboard;
