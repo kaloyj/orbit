@@ -6,6 +6,10 @@ import * as React from "react";
 import { Translations } from "../Dictionary";
 import { ThemeShape } from "../defaultTheme";
 
+declare module "styled-components" {
+  export interface DefaultTheme extends ThemeShape {}
+}
+
 interface Props {
   readonly theme: ThemeShape;
   readonly dictionary?: Translations;
